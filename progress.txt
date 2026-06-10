@@ -33,10 +33,16 @@ open-source.karaithy.com — 个人开发者雷达
 - 真实 GitHub Trending 入库 16 个（日榜+周榜，含 star 周增数据写在 why_interesting）
 - 推荐池初始化 8 人：levelsio / simonw / idoubi / antfu / mvanhorn / Panniantong / addyosmani / guangzhengli
 
+## 2026-06-10 第三批更新：每日采集 cron 上线
+- follow-builders 中央 feed 接入：scripts/collect-followbuilders.mjs（podcasts/blogs→articles，feed-x 命中已关注开发者→dynamics，raw 快照落盘，48h 新鲜度保护）
+- GitHub Actions 每日 cron：.github/workflows/daily-collect.yml（UTC 09:00，自动 commit+push 触发部署）
+- 首跑成功：+2 articles（No Priors 播客、Claude 官方博客），Zara 本人在 feed 监控列表里，其 X 动态自动进档案
+- browser-act 三层记忆沉淀完成：全局 CLAUDE.md（工具表+路由）、secondbrain wiki/reference/tools/browser-act.md、本项目 docs/03
+
 ## 下一步（按优先级）
-1. 写每日采集 skill + 接 scheduled-task；先跑通 GitHub Trending，X 源用 browser-act stealth-extract（已验证可抓 X 公开主页）
+1. GitHub Trending 采集也脚本化进 daily-collect（目前 Trending 是手动跑的）
 2. 渐进增强：全文搜索（fuse.js）、模块3 按新增 star 排序
-3. 推荐池（模块2）填充首批候选开发者
+3. follow-builders 的 26 人 builder 名单 → 筛选进推荐池
 
 ## 卡点 / 待验证
 - X 数据采集合规与可行性（主页需登录态，nitter 不稳）→ 可能降级为「手动喂 X 链接 + cron 只管 GitHub」

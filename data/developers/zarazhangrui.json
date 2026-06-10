@@ -8,13 +8,45 @@
   "tier": "core",
   "location": "San Jose, California",
   "company": "",
-  "tags": ["AI", "vibe-coding", "coding-agent", "skills", "slides", "devtools"],
+  "tags": [
+    "AI",
+    "vibe-coding",
+    "coding-agent",
+    "skills",
+    "slides",
+    "devtools"
+  ],
   "bases": [
-    { "platform": "github", "url": "https://github.com/zarazhangrui", "followers": 8400, "is_primary": true },
-    { "platform": "x", "url": "https://x.com/zarazhangrui", "followers": null, "is_primary": true },
-    { "platform": "website", "url": "http://www.zarazhang.com/", "followers": null, "is_primary": false },
-    { "platform": "substack", "url": "https://zarazhang.substack.com", "followers": null, "is_primary": false },
-    { "platform": "youtube", "url": "https://youtube.com/@ZaraZhangg", "followers": null, "is_primary": false }
+    {
+      "platform": "github",
+      "url": "https://github.com/zarazhangrui",
+      "followers": 8400,
+      "is_primary": true
+    },
+    {
+      "platform": "x",
+      "url": "https://x.com/zarazhangrui",
+      "followers": null,
+      "is_primary": true
+    },
+    {
+      "platform": "website",
+      "url": "http://www.zarazhang.com/",
+      "followers": null,
+      "is_primary": false
+    },
+    {
+      "platform": "substack",
+      "url": "https://zarazhang.substack.com",
+      "followers": null,
+      "is_primary": false
+    },
+    {
+      "platform": "youtube",
+      "url": "https://youtube.com/@ZaraZhangg",
+      "followers": null,
+      "is_primary": false
+    }
   ],
   "summary": "自述 AI tinkerer：没有传统工程背景、不会写代码，但借助 coding agent 把想法变成产品。核心打法是把「有主见的工作流」封装成 Claude Code skill / 模板库，靠极致好用 + 开源传播在 GitHub 上快速起量。代表作 frontend-slides 超 2 万 star。",
   "story": "以「不会写代码也能做产品」为人设，专注 coding agent 的 frontend / skill 能力。产品共性：解决一个具体高频痛点（做 slide、追 builder、把代码库变教程、管理浏览器标签页），用单文件 HTML / skill 形态降低使用门槛，daily 自动更新内容型项目（follow-builders）增强粘性。近期公开复盘过用 progressive disclosure 重构 skill，把 frontend-slides 的指令文件从 1625 行压到 183 行（context 减少 89%），方法论意识强。",
@@ -42,11 +74,28 @@
     "notes": "暂未见直接付费产品，价值在于「可复用的 skill 方法论」本身——对我而言是最高优先级的可借鉴对象。"
   },
   "dynamics": [
-    { "date": "2026-06-09", "type": "milestone", "content": "建档：frontend-slides 已达 20.9k star，置顶 6 个仓库均为 coding-agent 方向", "source_url": "https://github.com/zarazhangrui" }
+    {
+      "date": "2026-06-09",
+      "type": "milestone",
+      "content": "建档：frontend-slides 已达 20.9k star，置顶 6 个仓库均为 coding-agent 方向",
+      "source_url": "https://github.com/zarazhangrui"
+    },
+    {
+      "date": "2026-06-08",
+      "type": "post",
+      "content": "Actually I think the new world might be: Markdown, HTML, SVG\n\nSVG is underrated https://t.co/7jh75DNpUC",
+      "source_url": "https://x.com/zarazhangrui/status/2064108976565092706"
+    },
+    {
+      "date": "2026-06-08",
+      "type": "post",
+      "content": "This part is so well-written and resonated SO much:\n\n\"I am the programming equivalent of a home cook\" https://t.co/Sdwx0pZn2Y https://t.co/9auqS9f0Q5",
+      "source_url": "https://x.com/zarazhangrui/status/2064101916725096810"
+    }
   ],
   "my_take": "对标价值极高：她证明了「PM 视角 + coding agent + 好用的 skill」这条路能在不写代码的前提下做出爆款。她的 lark-coding-agent-bridge、codebase-to-course、frontend-slides 与我的工作流高度重合，是首选复刻/借鉴对象。",
   "replicate_intent": "fork",
   "source": "GitHub 主页 + X 公开信息，2026-06-09 核查",
   "created_at": "2026-06-09",
-  "updated_at": "2026-06-09"
+  "updated_at": "2026-06-10"
 }
