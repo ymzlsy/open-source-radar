@@ -15,5 +15,144 @@
     "promoted_to_developer_id": null,
     "discovered_at": "2026-06-09",
     "source": ""
+  },
+  {
+    "id": "levelsio",
+    "name": "Pieter Levels",
+    "handle": "levelsio",
+    "oneliner": "Indie hacker 祖师爷：一人公司做出 PhotoAI / Nomad List / RemoteOK，全部公开收入",
+    "bases": [
+      { "platform": "x", "url": "https://x.com/levelsio", "is_primary": true },
+      { "platform": "website", "url": "https://levels.io", "is_primary": false }
+    ],
+    "tags": ["indie-hacker", "solo-founder", "AI", "build-in-public"],
+    "why_recommended": "『一人公司+公开收入』模式的标杆，所有产品不融资不招人；他的 build in public 方法论是个人项目商业化落地的最直接教材",
+    "related_to": "indie hacker 生态的公认参照系",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "手动收录"
+  },
+  {
+    "id": "simonw",
+    "name": "Simon Willison",
+    "handle": "simonw",
+    "oneliner": "Datasette 作者、Django 联合创造者，AI 工程领域最高产的博客作者",
+    "bases": [
+      { "platform": "github", "url": "https://github.com/simonw", "is_primary": true },
+      { "platform": "website", "url": "https://simonwillison.net", "is_primary": true },
+      { "platform": "x", "url": "https://x.com/simonw", "is_primary": false }
+    ],
+    "tags": ["llm", "devtools", "blogging", "open-source"],
+    "why_recommended": "每天高质量输出 LLM 实践笔记，llm CLI 工具链作者；Karpathy 在 GitHub 上 sponsor 的就是他——技术品味的传递链",
+    "related_to": "Karpathy 的 GitHub sponsor 对象",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "Karpathy 主页发现"
+  },
+  {
+    "id": "idoubi",
+    "name": "艾逗笔 idoubi",
+    "handle": "idoubicc",
+    "oneliner": "前腾讯工程师转独立开发：ThinkAny、AI 红薯哥，中文圈 AI 变现路线代表",
+    "bases": [
+      { "platform": "x", "url": "https://x.com/idoubicc", "is_primary": true },
+      { "platform": "github", "url": "https://github.com/all-in-aigc", "is_primary": false },
+      { "platform": "website", "url": "https://idoubi.app", "is_primary": false }
+    ],
+    "tags": ["indie-hacker", "AI", "中文开发者", "变现"],
+    "why_recommended": "中文圈『AI 产品快速变现』打法最完整的样本：模板化建站、快速验证、矩阵复制，路径对国内环境适配度高",
+    "related_to": "中文 indie 圈高频出现",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "手动收录"
+  },
+  {
+    "id": "antfu",
+    "name": "Anthony Fu",
+    "handle": "antfu",
+    "oneliner": "Vue/Vite/Nuxt 核心团队、UnoCSS 作者：开源工程美学与可持续开源变现的华人标杆",
+    "bases": [
+      { "platform": "github", "url": "https://github.com/antfu", "is_primary": true },
+      { "platform": "website", "url": "https://antfu.me", "is_primary": true },
+      { "platform": "x", "url": "https://x.com/antfu7", "is_primary": false }
+    ],
+    "tags": ["open-source", "frontend", "devtools", "中文开发者"],
+    "why_recommended": "靠 GitHub Sponsors 实现全职开源的华人代表，工具链设计品味极高；研究『开源如何养活自己』绕不开他",
+    "related_to": "前端/开源生态公认参照",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "手动收录"
+  },
+  {
+    "id": "mvanhorn",
+    "name": "mvanhorn",
+    "handle": "mvanhorn",
+    "oneliner": "last30days-skill 作者：单个 skill 横扫今日 Trending 第一（3.7 万 star）",
+    "bases": [
+      { "platform": "github", "url": "https://github.com/mvanhorn", "is_primary": true }
+    ],
+    "tags": ["skill", "research", "claude-code"],
+    "why_recommended": "用一个跨平台调研 skill（Reddit/X/YouTube/HN）做到日增 3.2k star，验证了『单文件 skill 也能成爆款』；与 Zara 同赛道可对照",
+    "related_to": "2026-06-10 GitHub Trending 日榜第一",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "github-trending-daily"
+  },
+  {
+    "id": "Panniantong",
+    "name": "Panniantong",
+    "handle": "Panniantong",
+    "oneliner": "Agent-Reach 作者：一个 CLI 让 agent 免 API 读全网（含 B站/小红书），2.6 万 star",
+    "bases": [
+      { "platform": "github", "url": "https://github.com/Panniantong", "is_primary": true }
+    ],
+    "tags": ["agent", "scraping", "中文开发者"],
+    "why_recommended": "中文开发者做出周增 4.4k star 的 agent 基建，覆盖国内平台（B站/小红书）是稀缺能力；本站采集器可能直接用他的轮子",
+    "related_to": "2026-06-10 GitHub Trending 周榜",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "github-trending-weekly"
+  },
+  {
+    "id": "addyosmani",
+    "name": "Addy Osmani",
+    "handle": "addyosmani",
+    "oneliner": "Chrome 团队工程负责人,《Learning JavaScript Design Patterns》作者,agent-skills 5 万 star",
+    "bases": [
+      { "platform": "github", "url": "https://github.com/addyosmani", "is_primary": true },
+      { "platform": "x", "url": "https://x.com/addyosmani", "is_primary": false },
+      { "platform": "website", "url": "https://addyosmani.com", "is_primary": false }
+    ],
+    "tags": ["engineering", "skills", "google", "writing"],
+    "why_recommended": "大厂工程领袖下场做 agent skills 的代表，生产级工程视角与 indie 玩法互补；技术写作能力一流",
+    "related_to": "2026-06-10 GitHub Trending 日榜（agent-skills）",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "github-trending-daily"
+  },
+  {
+    "id": "guangzhengli",
+    "name": "guangzhengli",
+    "handle": "guangzhengli",
+    "oneliner": "《独立开发技术栈》作者：系统梳理 indie hacker 从 0 到 1 的全套工具与路径",
+    "bases": [
+      { "platform": "website", "url": "https://guangzhengli.com", "is_primary": true },
+      { "platform": "github", "url": "https://github.com/guangzhengli", "is_primary": false },
+      { "platform": "x", "url": "https://x.com/iguangzhengli", "is_primary": false }
+    ],
+    "tags": ["indie-hacker", "tech-stack", "中文开发者", "writing"],
+    "why_recommended": "他的《独立开发技术栈》是中文圈最系统的 indie 入门图谱；从『学习路径』角度与本站目标（找到自己想做的项目）直接互补",
+    "related_to": "中文 indie 圈高质量长文作者",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-10",
+    "source": "手动收录"
   }
 ]

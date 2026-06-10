@@ -27,6 +27,12 @@ open-source.karaithy.com — 个人开发者雷达
 - npm run build 通过；dev server 截图验证首页与开发者详情页渲染正常
 - 本地预览：npm run dev（.claude/launch.json 已配 radar-dev，端口 5191）
 
+## 2026-06-10 第二批更新
+- 新增 Karpathy 完整档案（core，198k followers，nanoGPT/nanochat/llm.c/micrograd 入库）
+- 模块3 语义修正：探索流只收外部趋势源（feedProjects 过滤），已关注开发者作品只在档案页
+- 真实 GitHub Trending 入库 16 个（日榜+周榜，含 star 周增数据写在 why_interesting）
+- 推荐池初始化 8 人：levelsio / simonw / idoubi / antfu / mvanhorn / Panniantong / addyosmani / guangzhengli
+
 ## 下一步（按优先级）
 1. 写每日采集 skill + 接 scheduled-task；先跑通 GitHub Trending，X 源用 browser-act stealth-extract（已验证可抓 X 公开主页）
 2. 渐进增强：全文搜索（fuse.js）、模块3 按新增 star 排序

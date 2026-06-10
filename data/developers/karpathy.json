@@ -1,0 +1,52 @@
+{
+  "id": "karpathy",
+  "name": "Andrej Karpathy",
+  "handle": "karpathy",
+  "avatar": "https://avatars.githubusercontent.com/karpathy",
+  "oneliner": "AI 教育界的乔布斯：OpenAI 创始成员、前 Tesla AI 总监，现做 Eureka Labs，用最小可读代码教会世界训练 LLM",
+  "status": "tracking",
+  "tier": "core",
+  "location": "Stanford",
+  "company": "Eureka Labs",
+  "tags": ["AI", "LLM", "education", "deep-learning", "vibe-coding", "minimal-code"],
+  "bases": [
+    { "platform": "github", "url": "https://github.com/karpathy", "followers": 198000, "is_primary": true },
+    { "platform": "x", "url": "https://x.com/karpathy", "followers": null, "is_primary": true },
+    { "platform": "website", "url": "https://karpathy.ai", "followers": null, "is_primary": false },
+    { "platform": "youtube", "url": "https://www.youtube.com/@AndrejKarpathy", "followers": null, "is_primary": false },
+    { "platform": "website", "url": "https://eurekalabs.ai", "followers": null, "is_primary": false }
+  ],
+  "summary": "GitHub bio：『I like to train Deep Neural Nets on large datasets』，198k followers。斯坦福博士（李飞飞门下）、OpenAI 创始成员、2017-2022 任 Tesla AI 总监（Autopilot 视觉负责人），2024 年创办 AI 原生教育公司 Eureka Labs。技术品味的标杆人物：『Software 2.0』『vibe coding』等概念的提出者，每个开源项目都以『最小可读代码』示范一个完整系统。",
+  "story": "职业轨迹横跨学界、巨头与创业：斯坦福读博期间开设并主讲传奇课程 CS231n；OpenAI 创始成员；2017 年被马斯克挖去 Tesla 领导 Autopilot 视觉团队五年；2023 年短暂回归 OpenAI 后，2024 年创办 Eureka Labs，要做『AI 原生的学校』，首门课 LLM101n 教人从零构建自己的 LLM。开源风格独树一帜：nanoGPT（59.4k star）用几百行代码训练 GPT；llama2.c 用一个纯 C 文件做推理；nanochat（54.8k star）号称『$100 能买到的最好的 ChatGPT』——全栈从训练到推理一套带走。YouTube『Zero to Hero』系列被公认为入门 LLM 的最佳教材。2025 年初随口发明的『vibe coding』一词席卷整个行业，间接定义了 Zara 这类『不写代码的 builder』的存在方式。",
+  "highlights": [
+    "nanoGPT 59.4k star——训练/微调中型 GPT 的最简实现",
+    "nanochat 54.8k star——『$100 能买到的最好的 ChatGPT』，全栈训练+推理",
+    "llm.c 30.2k star——纯 C/CUDA 实现 LLM 训练；llama2.c 19.6k star",
+    "micrograd 16.2k star——百行级自动求导引擎，YouTube『Zero to Hero』系列的教学基石",
+    "Eureka Labs / LLM101n：AI 原生教育公司与从零构建 LLM 课程",
+    "概念发明家：Software 2.0（2017）、vibe coding（2025）"
+  ],
+  "project_ids": [
+    "karpathy__nanoGPT",
+    "karpathy__nanochat",
+    "karpathy__llm-c",
+    "karpathy__micrograd"
+  ],
+  "commercialization": {
+    "model": "个人影响力 + AI 原生教育创业（Eureka Labs）：开源教学项目全部免费，靠极致质量积累行业话语权，教育产品承接变现",
+    "signals": [
+      "Eureka Labs 成立并发布 LLM101n 课程规划",
+      "GitHub 198k followers / 每个教学 repo 都是数万 star 的行业事件",
+      "在 GitHub 上 sponsor simonw 等开发者——influence 即资产"
+    ],
+    "notes": "他验证了『教学即产品』：把复杂系统压缩成最小可读实现，本身就是稀缺供给。这与捷安的职业教育业务在方法论上同构——把工业系统压缩成可实训的仿真。"
+  },
+  "dynamics": [
+    { "date": "2026-06-10", "type": "milestone", "content": "建档：GitHub 198k followers，nanochat 已达 54.8k star，置顶 6 个仓库全部为最小化 LLM 教学实现", "source_url": "https://github.com/karpathy" }
+  ],
+  "my_take": "三位关注对象正好构成光谱：Karpathy 是『技术深度+教学』的极点，Zara 是『不写代码的 skill 工程』，陈锦初是『注意力+token』。对我最可落地的是他的教学方法论——nanoGPT 式『最小可读实现』就是我做培训产品 demo 的标准范式；LLM101n 的课程结构值得直接借鉴到捷安的职教课程设计。他的 autoresearch/karpathy-guidelines 我已在用。",
+  "replicate_intent": "build",
+  "source": "GitHub 主页抓取 + 公开资料，2026-06-10 核查",
+  "created_at": "2026-06-10",
+  "updated_at": "2026-06-10"
+}

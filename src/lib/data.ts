@@ -19,6 +19,12 @@ export const projects: Project[] = (projectsJson as Project[])
   .filter((p) => p.status !== 'dismissed')
   .sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0))
 
+// 模块3 探索流：只收外部趋势源（github-trending / x 等），
+// 已关注开发者的作品走其档案页，不占探索位
+export const feedProjects: Project[] = projects
+  .filter((p) => p.source != null && p.source !== '关注开发者动态')
+  .sort((a, b) => b.discovered_at.localeCompare(a.discovered_at) || (b.stars ?? 0) - (a.stars ?? 0))
+
 export const articles: Article[] = (articlesJson as Article[])
   .filter((a) => a.status !== 'dismissed')
   .sort((a, b) => b.discovered_at.localeCompare(a.discovered_at))

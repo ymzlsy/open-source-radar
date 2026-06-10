@@ -1,12 +1,12 @@
-import { developers, recommended, projects, articles } from '../lib/data'
+import { developers, recommended, feedProjects, articles } from '../lib/data'
 import { DeveloperCard, RecommendedCard, ProjectRow, ArticleRow } from '../components/cards'
 import { SectionHeader, Empty } from '../components/ui'
 
 export default function Home() {
-  const latestDate = [...projects.map((p) => p.discovered_at), ...articles.map((a) => a.discovered_at)]
+  const latestDate = [...feedProjects.map((p) => p.discovered_at), ...articles.map((a) => a.discovered_at)]
     .sort()
     .at(-1)
-  const newProjects = projects.filter((p) => p.discovered_at === latestDate)
+  const newProjects = feedProjects.filter((p) => p.discovered_at === latestDate)
   const newArticles = articles.filter((a) => a.discovered_at === latestDate)
 
   return (
@@ -51,9 +51,9 @@ export default function Home() {
 
       {/* 模块3 热门开源项目 */}
       <section>
-        <SectionHeader title="热门开源项目" sub="每日更新 · star 趋势 · 来源 GitHub / X" to="/projects" />
+        <SectionHeader title="热门开源项目" sub="全网趋势探索流 · 每日更新 · 从这里发现值得关注的新开发者" to="/projects" />
         <div className="space-y-2">
-          {projects.slice(0, 6).map((p) => (
+          {feedProjects.slice(0, 8).map((p) => (
             <ProjectRow key={p.id} p={p} />
           ))}
         </div>
