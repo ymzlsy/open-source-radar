@@ -1,0 +1,52 @@
+{
+  "id": "zarazhangrui",
+  "name": "张zara / Zara Zhang",
+  "handle": "zarazhangrui",
+  "avatar": "https://avatars.githubusercontent.com/zarazhangrui",
+  "oneliner": "不写代码的 AI tinkerer，用 coding agent 把有主见的 skill 做成爆款",
+  "status": "tracking",
+  "tier": "core",
+  "location": "San Jose, California",
+  "company": "",
+  "tags": ["AI", "vibe-coding", "coding-agent", "skills", "slides", "devtools"],
+  "bases": [
+    { "platform": "github", "url": "https://github.com/zarazhangrui", "followers": 8400, "is_primary": true },
+    { "platform": "x", "url": "https://x.com/zarazhangrui", "followers": null, "is_primary": true },
+    { "platform": "website", "url": "http://www.zarazhang.com/", "followers": null, "is_primary": false },
+    { "platform": "substack", "url": "https://zarazhang.substack.com", "followers": null, "is_primary": false },
+    { "platform": "youtube", "url": "https://youtube.com/@ZaraZhangg", "followers": null, "is_primary": false }
+  ],
+  "summary": "自述 AI tinkerer：没有传统工程背景、不会写代码，但借助 coding agent 把想法变成产品。核心打法是把「有主见的工作流」封装成 Claude Code skill / 模板库，靠极致好用 + 开源传播在 GitHub 上快速起量。代表作 frontend-slides 超 2 万 star。",
+  "story": "以「不会写代码也能做产品」为人设，专注 coding agent 的 frontend / skill 能力。产品共性：解决一个具体高频痛点（做 slide、追 builder、把代码库变教程、管理浏览器标签页），用单文件 HTML / skill 形态降低使用门槛，daily 自动更新内容型项目（follow-builders）增强粘性。近期公开复盘过用 progressive disclosure 重构 skill，把 frontend-slides 的指令文件从 1625 行压到 183 行（context 减少 89%），方法论意识强。",
+  "highlights": [
+    "frontend-slides 20.9k star——web 端用 coding agent 生成精美 slide",
+    "follow-builders 5.1k star——监控 X/YouTube 上头部 AI builder 并自动 daily 摘要",
+    "codebase-to-course 4.6k star——把任意代码库变成单页交互式课程",
+    "beautiful-html-templates 2.7k star——给 coding agent 用的 HTML slide 模板库",
+    "公开分享 skill 的 progressive disclosure 重构方法（1625→183 行）"
+  ],
+  "project_ids": [
+    "zarazhangrui__frontend-slides",
+    "zarazhangrui__follow-builders",
+    "zarazhangrui__codebase-to-course",
+    "zarazhangrui__beautiful-html-templates",
+    "zarazhangrui__tab-out",
+    "zarazhangrui__lark-coding-agent-bridge"
+  ],
+  "commercialization": {
+    "model": "开源爆款引流 + 个人品牌（Substack/YouTube）变现，typical creator-led 路径",
+    "signals": [
+      "多个项目万级 star，已形成 coding-agent skill 领域的个人品牌",
+      "Substack + YouTube + 个人站三件套，具备内容变现承接面"
+    ],
+    "notes": "暂未见直接付费产品，价值在于「可复用的 skill 方法论」本身——对我而言是最高优先级的可借鉴对象。"
+  },
+  "dynamics": [
+    { "date": "2026-06-09", "type": "milestone", "content": "建档：frontend-slides 已达 20.9k star，置顶 6 个仓库均为 coding-agent 方向", "source_url": "https://github.com/zarazhangrui" }
+  ],
+  "my_take": "对标价值极高：她证明了「PM 视角 + coding agent + 好用的 skill」这条路能在不写代码的前提下做出爆款。她的 lark-coding-agent-bridge、codebase-to-course、frontend-slides 与我的工作流高度重合，是首选复刻/借鉴对象。",
+  "replicate_intent": "fork",
+  "source": "GitHub 主页 + X 公开信息，2026-06-09 核查",
+  "created_at": "2026-06-09",
+  "updated_at": "2026-06-09"
+}

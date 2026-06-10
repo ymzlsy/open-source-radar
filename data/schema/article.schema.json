@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Article",
+  "description": "模块4 热门课程/教程/工具/技术文章/研究报告，每日 cron 更新。",
+  "type": "object",
+  "required": ["id", "title", "url", "type", "status", "discovered_at"],
+  "properties": {
+    "id": { "type": "string", "description": "slug" },
+    "title": { "type": "string" },
+    "url": { "type": "string", "description": "原文地址" },
+    "type": {
+      "type": "string",
+      "enum": ["article", "tutorial", "course", "tool", "report"],
+      "description": "文章/教程/课程/工具/研究报告"
+    },
+    "author": { "type": "string" },
+    "author_developer_id": { "type": ["string", "null"] },
+    "source_platform": { "type": "string", "description": "如 X、GitHub、Substack、个人博客、Hacker News" },
+    "summary": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "why_useful": { "type": "string", "description": "为什么有用，一句话" },
+    "discovered_at": { "type": "string" },
+    "source": { "type": "string", "description": "发现渠道" },
+    "status": {
+      "type": "string",
+      "enum": ["feed", "saved", "consumed", "dismissed"],
+      "description": "流→收藏→已消费/已弃"
+    },
+    "my_take": { "type": "string" }
+  }
+}

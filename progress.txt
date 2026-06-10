@@ -1,0 +1,39 @@
+open-source.karaithy.com — 个人开发者雷达
+=========================================
+建档：2026-06-09 ｜ 类型：长期积累型数据项目 ｜ 对外：公开作品集
+
+## 当前状态：React MVP 已建成并本地验证通过（2026-06-10），待部署
+
+三个关键决策（已确认）：
+- 更新机制：全自动 cron 每日采集（cron 捞进来 status=feed，人工晋升）
+- 对外属性：公开作品集（my_take 客观克制，私人判断不上线）
+- 技术栈：React + Vite + Tailwind + TS，纯 JSON 数据层，Cloudflare Pages
+
+## 已产出
+- docs/00 价值与边界、01 信息架构、02 数据规范、03 维护流程
+- data/schema/ developer + project + article 三套 JSON Schema
+- data/developers/ zarazhangrui.json（完整档）、0xajc.json（草稿档，待人工补全）
+- data/feed/projects.json（Zara 6 个项目种子）、articles.json（1 篇种子）
+- data/recommended-developers.json（含模板，待填充）
+
+## MVP 已完成内容（2026-06-10）
+- Vite + React 18 + TS + Tailwind v4 + react-router(HashRouter)
+- 首页 4 模块 + developers/projects/articles 三类详情页 + 分类筛选
+- 数据层：import.meta.glob 读 data/developers/*.json + feed JSON，零后端
+- star 趋势 Sparkline 自绘 SVG；replicate_intent / status 徽标体系
+- npm run build 通过；dev server 截图验证首页与开发者详情页渲染正常
+- 本地预览：npm run dev（.claude/launch.json 已配 radar-dev，端口 5191）
+
+## 下一步（按优先级）
+1. git init + 部署到 open-source.karaithy.com（Cloudflare Pages + git push 自动）
+2. 写每日采集 skill + 接 scheduled-task；先跑通 GitHub Trending，X 源按降级方案
+3. 补全 0xajc：登录 X 拿 bio/置顶/近况后转 tracking
+4. 渐进增强：全文搜索（fuse.js）、模块3 按新增 star 排序
+
+## 卡点 / 待验证
+- X 数据采集合规与可行性（主页需登录态，nitter 不稳）→ 可能降级为「手动喂 X 链接 + cron 只管 GitHub」
+- cron 运行载体：本机 scheduled-task（需开机）vs GitHub Actions 云端
+
+## 关键参考
+- Zara 的 follow-builders：与本站每日采集需求几乎同构，采集架构直接借鉴
+- secondbrain 回写路径：wiki/projects/open-source-radar/

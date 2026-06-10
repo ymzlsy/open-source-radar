@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Developer",
+  "description": "模块1 关注的个人开发者档案。原始层=采集快照，本文件为标准层+分析层合一。",
+  "type": "object",
+  "required": ["id", "name", "status", "tier", "bases", "updated_at"],
+  "properties": {
+    "id": { "type": "string", "description": "slug，唯一，如 zarazhangrui" },
+    "name": { "type": "string", "description": "展示名，中文优先，如 张zara / Zara Zhang" },
+    "handle": { "type": "string", "description": "最常用 ID，如 zarazhangrui / 0xajc" },
+    "avatar": { "type": "string", "description": "头像 URL，可留空由前端兜底" },
+    "oneliner": { "type": "string", "description": "一句话定位，卡片正面用" },
+    "status": {
+      "type": "string",
+      "enum": ["candidate", "tracking", "archived"],
+      "description": "生命周期：候选→关注中→已归档"
+    },
+    "tier": {
+      "type": "string",
+      "enum": ["core", "watch"],
+      "description": "关注强度：核心持续追 / 观察"
+    },
+    "location": { "type": "string" },
+    "company": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" }, "description": "方向标签，如 AI、devtools、vibe-coding、slides" },
+    "bases": {
+      "type": "array",
+      "description": "阵地（模块2 也复用此结构）",
+      "items": {
+        "type": "object",
+        "required": ["platform", "url"],
+        "properties": {
+          "platform": { "type": "string", "enum": ["github", "x", "website", "substack", "youtube", "producthunt", "other"] },
+          "url": { "type": "string" },
+          "followers": { "type": ["integer", "null"], "description": "粉丝/关注数，未知填 null" },
+          "is_primary": { "type": "boolean", "description": "是否主阵地" }
+        }
+      }
+    },
+    "summary": { "type": "string", "description": "简介，markdown" },
+    "story": { "type": "string", "description": "事迹/经历，markdown" },
+    "highlights": { "type": "array", "items": { "type": "string" }, "description": "代表作/里程碑要点" },
+    "project_ids": { "type": "array", "items": { "type": "string" }, "description": "关联到 data/feed/projects.json 的项目 id" },
+    "commercialization": {
+      "type": "object",
+      "description": "商业化分析",
+      "properties": {
+        "model": { "type": "string", "description": "变现模式：开源引流/订阅/付费模板/咨询/SaaS..." },
+        "signals": { "type": "array", "items": { "type": "string" }, "description": "收入/付费信号" },
+        "notes": { "type": "string" }
+      }
+    },
+    "dynamics": {
+      "type": "array",
+      "description": "动态时间线，cron 可 append",
+      "items": {
+        "type": "object",
+        "required": ["date", "content"],
+        "properties": {
+          "date": { "type": "string", "description": "YYYY-MM-DD" },
+          "type": { "type": "string", "enum": ["release", "post", "milestone", "talk", "other"] },
+          "content": { "type": "string" },
+          "source_url": { "type": "string" }
+        }
+      }
+    },
+    "my_take": { "type": "string", "description": "我的判断（公开站点：客观克制版）" },
+    "replicate_intent": {
+      "type": "string",
+      "enum": ["none", "watch", "fork", "build"],
+      "description": "对我的可复用性：不动/观望/直接 fork 改/借鉴自建"
+    },
+    "source": { "type": "string", "description": "信息来源说明" },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" }
+  }
+}

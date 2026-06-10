@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Project",
+  "description": "模块3 热门开源项目，每日 cron 更新。也被 developer.project_ids 引用。",
+  "type": "object",
+  "required": ["id", "name", "repo_url", "status", "discovered_at"],
+  "properties": {
+    "id": { "type": "string", "description": "slug，建议 owner__repo" },
+    "name": { "type": "string" },
+    "repo_url": { "type": "string", "description": "原项目地址" },
+    "homepage": { "type": "string" },
+    "author": { "type": "string", "description": "作者展示名" },
+    "author_developer_id": { "type": ["string", "null"], "description": "若作者已在模块1，关联其 id；否则 null" },
+    "description": { "type": "string", "description": "项目自带简介" },
+    "category": { "type": "string", "description": "如 slides、devtool、agent、browser-ext、skill" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "language": { "type": "string" },
+    "license": { "type": "string" },
+    "stars": { "type": "integer" },
+    "stars_history": {
+      "type": "array",
+      "description": "star 趋势快照，cron 每日 append，前端画 sparkline",
+      "items": {
+        "type": "object",
+        "required": ["date", "stars"],
+        "properties": {
+          "date": { "type": "string" },
+          "stars": { "type": "integer" }
+        }
+      }
+    },
+    "why_interesting": { "type": "string", "description": "为什么值得看，一句话" },
+    "analysis": { "type": "string", "description": "深度分析，markdown，可后补" },
+    "commercialization_signal": { "type": "string" },
+    "discovered_at": { "type": "string", "description": "首次发现日期 YYYY-MM-DD" },
+    "source": { "type": "string", "description": "发现渠道：github-trending / x / 关注开发者动态" },
+    "status": {
+      "type": "string",
+      "enum": ["feed", "shortlisted", "replicated", "dismissed"],
+      "description": "生命周期：流→收藏→已复刻/已弃"
+    },
+    "my_take": { "type": "string" },
+    "replicate_intent": { "type": "string", "enum": ["none", "watch", "fork", "build"] }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "0xajc",
+  "name": "陈锦初 Andrew",
+  "handle": "0xajc",
+  "avatar": "",
+  "oneliner": "00后连续创业者：18 岁辍学做出 Instap（被收购），现 All in Web3 做 Nuwa World（Human Intelligence OS）",
+  "status": "tracking",
+  "tier": "watch",
+  "location": "",
+  "company": "Nuwa World",
+  "tags": ["Web3", "crypto", "OSINT", "AI", "连续创业", "社交产品"],
+  "bases": [
+    { "platform": "x", "url": "https://x.com/0xajc", "followers": 13600, "is_primary": true },
+    { "platform": "x", "url": "https://x.com/nuwa_world", "followers": 9319, "is_primary": false },
+    { "platform": "website", "url": "https://nuwa.world", "followers": null, "is_primary": false },
+    { "platform": "other", "url": "https://t.me/cjccrypto2025", "followers": null, "is_primary": false }
+  ],
+  "summary": "X 简介：Cooking @Nuwa_World ｜前 Instap 创始人（被收购）｜UMass Amherst 辍学生｜Watford FC 小股东。X 粉丝 1.36 万、3475 条推文（2016 年注册）。无 GitHub 公开账号——他不是开源开发者，而是 Web3/crypto 赛道的连续创业者，阵地集中在 X 和 Telegram（t.me/cjccrypto2025）。",
+  "story": "2020 年 18 岁时因疫情回国从 UMass Amherst 辍学创业，做出 web2 社交 app Instap，自述全网 20 多亿曝光、销售额破千万，后被收购。之后转入 crypto：在币coin 开实盘「陈锦初_大初子」，2025 年 8 月完成 10 万 U 翻倍挑战；置顶推文（2025-11）自曝单月亏损 45 万 U（10 BTC 浮亏 + 合约回撤 + OKB），获 39 万阅读——以高透明度的盈亏叙事经营个人 IP。当前主业是 Nuwa World：定位 Human Intelligence OS，通过身份、上下文、声誉和人脉信号「读人」，上传照片即可人脸反搜 + 深度调研（OSINT），2026 年 2 月上线 API 并发布 OpenClaw skill，项目挂在 Virtuals 生态（$NUWA 代币）。",
+  "highlights": [
+    "18 岁辍学创办 web2 社交 app Instap：20 亿+ 曝光、销售额破千万、被收购",
+    "Nuwa World：Human Intelligence OS，照片→人脸反搜+OSINT 深度调研，API + OpenClaw skill 已上线",
+    "$NUWA 发在 Virtuals 生态，项目号 9300+ 粉丝",
+    "币coin 实盘完成 10 万 U 翻倍挑战；置顶推文以单月 -45 万 U 的透明复盘获 39 万阅读"
+  ],
+  "project_ids": ["nuwa-world"],
+  "commercialization": {
+    "model": "Web3 token + API 订阅双轨：$NUWA 代币（Virtuals 生态）承接叙事与流动性，Nuwa API / OpenClaw skill 承接真实用量；个人 IP（盈亏透明叙事）为项目导流",
+    "signals": [
+      "Instap 被收购——已有一次成功退出",
+      "Nuwa World API 正式上线并接入 OpenClaw 生态",
+      "$NUWA 代币已发行，项目在 Virtuals launchpad"
+    ],
+    "notes": "变现路径与 Zara 完全相反：不靠开源星标，靠 token + 个人 IP 注意力。OSINT『读人』产品有隐私合规风险，国内场景不可直接复刻。"
+  },
+  "dynamics": [
+    { "date": "2026-02-23", "type": "release", "content": "Nuwa World API 上线，同步发布 OpenClaw skill（人脸反搜 + 深度调研两项 OSINT 能力）", "source_url": "https://x.com/nuwa_world/status/2025791855850610810" },
+    { "date": "2025-11-25", "type": "post", "content": "置顶长文：单月亏损 45 万 U 的交易复盘 + 创业经历自述，39 万阅读", "source_url": "https://x.com/0xajc/status/1993106040062460183" },
+    { "date": "2025-08-02", "type": "milestone", "content": "币coin 实盘 10 万 U 翻倍挑战成功出本", "source_url": "https://x.com/0xajc" },
+    { "date": "2026-06-10", "type": "other", "content": "档案补全：经 stealth 抓取 X 主页确认身份与项目，candidate 转 tracking", "source_url": "https://x.com/0xajc" }
+  ],
+  "my_take": "和 Zara 是两条完全不同的路：Zara 靠开源 skill 积累技术声誉，陈锦初靠 token + 注意力经济做 Web3 创业。对我的参考价值在『个人 IP 运营』——用极度透明的盈亏/创业叙事换信任和流量；Nuwa 的『上传照片→OSINT 报告』产品形态值得研究，但合规边界敏感，观察为主不复刻。",
+  "replicate_intent": "watch",
+  "source": "browser-act stealth 抓取 x.com/0xajc 与 x.com/nuwa_world，2026-06-10；GitHub 确认无 0xajc 账号（404）",
+  "created_at": "2026-06-09",
+  "updated_at": "2026-06-10"
+}

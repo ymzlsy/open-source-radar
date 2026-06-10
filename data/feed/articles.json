@@ -1,0 +1,18 @@
+[
+  {
+    "id": "zarazhang-progressive-disclosure-skill",
+    "title": "把 skill 指令从 1625 行压到 183 行：progressive disclosure 重构",
+    "url": "https://x.com/zarazhangrui/status/2029092514435932647",
+    "type": "article",
+    "author": "Zara Zhang",
+    "author_developer_id": "zarazhangrui",
+    "source_platform": "X",
+    "summary": "frontend-slides skill 用 progressive disclosure 模式重构，功能不变但每次加载的 context 减少 89%（1625→183 行）。把指令文件当目录用，按需展开。",
+    "tags": ["skill", "claude-code", "context-engineering", "方法论"],
+    "why_useful": "直接可用于优化我自己的 skill 库，降低 context 膨胀",
+    "discovered_at": "2026-06-09",
+    "source": "关注开发者动态",
+    "status": "saved",
+    "my_take": "我那 ~100 个 skill 也该这么瘦身。"
+  }
+]

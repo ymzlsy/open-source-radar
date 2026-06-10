@@ -1,0 +1,19 @@
+[
+  {
+    "id": "_template",
+    "name": "示例·推荐开发者模板",
+    "handle": "",
+    "oneliner": "一句话定位",
+    "bases": [
+      { "platform": "x", "url": "", "is_primary": true },
+      { "platform": "github", "url": "", "is_primary": false }
+    ],
+    "tags": [],
+    "why_recommended": "为什么推荐你关注、对你可能有什么用",
+    "related_to": "谁/什么场景下发现的",
+    "promoted": false,
+    "promoted_to_developer_id": null,
+    "discovered_at": "2026-06-09",
+    "source": ""
+  }
+]
