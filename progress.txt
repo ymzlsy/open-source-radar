@@ -2,7 +2,10 @@ open-source.karaithy.com — 个人开发者雷达
 =========================================
 建档：2026-06-09 ｜ 类型：长期积累型数据项目 ｜ 对外：公开作品集
 
-## 当前状态：React MVP 已建成并本地验证通过（2026-06-10），待部署
+## 当前状态：已上线 https://open-source.karaithy.com （2026-06-10）
+
+部署链路：GitHub ymzlsy/open-source-radar → Cloudflare Pages（Git 型，构建 npm run build / 输出 dist）→ git push 即自动部署。已登记 SITE-REGISTRY.md 第 13 条。
+陈锦初档案已补全（browser-act stealth 抓 X 确认）：Web3 创业者，前 Instap 创始人（被收购），现做 Nuwa World（Human Intelligence OS，$NUWA/Virtuals），无 GitHub，candidate 转 tracking。
 
 三个关键决策（已确认）：
 - 更新机制：全自动 cron 每日采集（cron 捞进来 status=feed，人工晋升）
@@ -25,10 +28,9 @@ open-source.karaithy.com — 个人开发者雷达
 - 本地预览：npm run dev（.claude/launch.json 已配 radar-dev，端口 5191）
 
 ## 下一步（按优先级）
-1. git init + 部署到 open-source.karaithy.com（Cloudflare Pages + git push 自动）
-2. 写每日采集 skill + 接 scheduled-task；先跑通 GitHub Trending，X 源按降级方案
-3. 补全 0xajc：登录 X 拿 bio/置顶/近况后转 tracking
-4. 渐进增强：全文搜索（fuse.js）、模块3 按新增 star 排序
+1. 写每日采集 skill + 接 scheduled-task；先跑通 GitHub Trending，X 源用 browser-act stealth-extract（已验证可抓 X 公开主页）
+2. 渐进增强：全文搜索（fuse.js）、模块3 按新增 star 排序
+3. 推荐池（模块2）填充首批候选开发者
 
 ## 卡点 / 待验证
 - X 数据采集合规与可行性（主页需登录态，nitter 不稳）→ 可能降级为「手动喂 X 链接 + cron 只管 GitHub」
